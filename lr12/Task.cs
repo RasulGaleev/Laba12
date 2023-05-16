@@ -12,7 +12,6 @@ namespace lr12
         public int ID { get; set; }
         public string Date { get; set; }
         public string Client { get; set; }
-
         public string Item { get; set; }
         public int Count { get; set; }
         public int UserId { get; set; }
