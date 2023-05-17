@@ -27,11 +27,11 @@ namespace lr12
             var user = new User
             {
                 Name = textBox1.Text,
-                Surname = textBox3.Text,
-                Role = textBox2.Text,
-                Phone = textBox1.Text,
-                Email = textBox3.Text,
-                Password = textBox2.Text
+                Surname = textBox2.Text,
+                Role = textBox3.Text,
+                Phone = textBox4.Text,
+                Email = textBox5.Text,
+                Password = textBox6.Text
             };
 
             _context.User.Add(user);

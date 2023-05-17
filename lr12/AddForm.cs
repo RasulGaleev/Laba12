@@ -20,7 +20,7 @@ namespace lr12
         public Task Task { get; private set; }
         public AddForm(AppDbContext context, User user)
         {
-            
+
             InitializeComponent();
             _context = context;
             _user = user;
@@ -30,10 +30,12 @@ namespace lr12
         {
             var task = new Task
             {
+                UserId = _user.Id,
                 Date = (dateTimePicker1.Value).ToString(),
                 Client = textBox1.Text,
                 Item = textBox2.Text,
-                Count = Convert.ToInt32(textBox3.Text)
+                Count = Convert.ToInt32(textBox3.Text),
+                Status = textBox4.Text
             };
 
             _context.Task.Add(task);

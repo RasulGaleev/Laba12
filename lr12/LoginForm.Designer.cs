@@ -34,6 +34,7 @@
             label2 = new Label();
             label3 = new Label();
             button1 = new Button();
+            linkLabel1 = new LinkLabel();
             SuspendLayout();
             // 
             // textBox1
@@ -80,7 +81,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(122, 308);
+            button1.Location = new Point(124, 293);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 5;
@@ -88,11 +89,23 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Location = new Point(34, 388);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(151, 20);
+            linkLabel1.TabIndex = 6;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Зарегистрироваться";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(360, 433);
+            Controls.Add(linkLabel1);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -113,5 +126,6 @@
         private Label label2;
         private Label label3;
         private Button button1;
+        private LinkLabel linkLabel1;
     }
 }
