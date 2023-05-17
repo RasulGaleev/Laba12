@@ -32,6 +32,7 @@
             dataGridView1 = new DataGridView();
             button1 = new Button();
             button2 = new Button();
+            button4 = new Button();
             button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -49,7 +50,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(29, 134);
+            dataGridView1.Location = new Point(29, 142);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
@@ -75,13 +76,22 @@
             button2.Text = "Удалить";
             button2.UseVisualStyleBackColor = true;
             // 
+            // button4
+            // 
+            button4.Location = new Point(284, 509);
+            button4.Name = "button4";
+            button4.Size = new Size(94, 29);
+            button4.TabIndex = 4;
+            button4.Text = "Выход";
+            button4.UseVisualStyleBackColor = true;
+            // 
             // button3
             // 
-            button3.Location = new Point(284, 509);
+            button3.Location = new Point(229, 99);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 4;
-            button3.Text = "Выход";
+            button3.Size = new Size(172, 29);
+            button3.TabIndex = 5;
+            button3.Text = "Сменить статус";
             button3.UseVisualStyleBackColor = true;
             // 
             // MenuForm
@@ -90,6 +100,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(670, 550);
             Controls.Add(button3);
+            Controls.Add(button4);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
@@ -108,5 +119,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private Button button4;
     }
 }

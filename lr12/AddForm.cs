@@ -35,7 +35,7 @@ namespace lr12
                 Client = textBox1.Text,
                 Item = textBox2.Text,
                 Count = Convert.ToInt32(textBox3.Text),
-                Status = textBox4.Text
+                Status = false
             };
 
             _context.Task.Add(task);

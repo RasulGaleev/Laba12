@@ -38,8 +38,6 @@
             textBox3 = new TextBox();
             dateTimePicker1 = new DateTimePicker();
             button1 = new Button();
-            textBox4 = new TextBox();
-            label6 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -118,7 +116,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(124, 391);
+            button1.Location = new Point(126, 359);
             button1.Name = "button1";
             button1.Size = new Size(159, 29);
             button1.TabIndex = 9;
@@ -126,29 +124,11 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(171, 330);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(194, 27);
-            textBox4.TabIndex = 10;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(48, 337);
-            label6.Name = "label6";
-            label6.Size = new Size(52, 20);
-            label6.TabIndex = 11;
-            label6.Text = "Статус";
-            // 
             // AddForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(416, 450);
-            Controls.Add(label6);
-            Controls.Add(textBox4);
             Controls.Add(button1);
             Controls.Add(dateTimePicker1);
             Controls.Add(textBox3);
@@ -177,7 +157,5 @@
         private TextBox textBox3;
         private DateTimePicker dateTimePicker1;
         private Button button1;
-        private TextBox textBox4;
-        private Label label6;
     }
 }

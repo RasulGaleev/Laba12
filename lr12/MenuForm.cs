@@ -63,6 +63,10 @@ namespace lr12
         {
             var selectedRow = dataGridView1.SelectedRows[0];
             var task = (Task)selectedRow.DataBoundItem;
+            if (task.Status == false)
+                task.Status = true;
+            else
+                task.Status = false;
             _context.SaveChanges();
 
             dataGridView1.DataSource = null;
